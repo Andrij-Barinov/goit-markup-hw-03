@@ -164,6 +164,7 @@ img {
   font-weight: 500;
   display: flex;
   margin-right: auto;
+  align-items: center;
 }
 
 .header-nav-link:hover,
@@ -191,6 +192,7 @@ img {
 .header-address-list {
   display: flex;
   gap: 40px;
+  align-items: center;
 }
 
 /**
@@ -200,16 +202,12 @@ img {
 */
 .hero {
   background-color: var(--hero-footer-background-color);
-}
-
-.hero-container {
   padding: 188px 0;
-  /* margin: 0 auto; */
 }
 
 .hero-title {
   color: var(--white-color);
-  width: 496px;
+  max-width: 496px;
   text-align: center;
   font-size: 56px;
   line-height: 1.07;
@@ -226,16 +224,16 @@ img {
   letter-spacing: 0.04em;
   padding: 16px 32px;
   font-family: var(--main-font);
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--pressed-state-color);
-}
-
-.button-wrapper {
-  display: flex;
-  justify-content: center;
 }
 
 /**
@@ -244,13 +242,13 @@ img {
   |============================
 */
 .benefits {
-  padding-top: 120px;
-  padding-bottom: 60px;
+  padding: 120px 0;
 }
 
 .benefits-list {
   display: flex;
   justify-content: space-between;
+  gap: 24px;
 }
 
 .benefits-item {
@@ -267,14 +265,17 @@ img {
   |============================
 */
 .developments {
-  padding-top: 60px;
   padding-bottom: 120px;
+}
+
+.development-title {
+  padding-bottom: 72px;
 }
 
 .developments-list {
   display: flex;
-  padding-top: 72px;
   justify-content: space-between;
+  gap: 24px;
 }
 
 .developments-item {
@@ -294,10 +295,14 @@ img {
   padding-bottom: 120px;
 }
 
+.team-title {
+  padding-bottom: 72px;
+}
+
 .team-list {
   display: flex;
-  padding-top: 72px;
   justify-content: space-between;
+  gap: 24px;
 }
 
 .team-card {
@@ -317,43 +322,17 @@ img {
   width: 232px;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 8px;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-/**
-  |============================
-  | Portfolio card
-  |============================
-*/
-.portfolio-card {
-  padding-bottom: 120px;
+.team-subtitle {
+  margin-bottom: 8px;
+  text-align: center;
 }
 
-.portfolio-list {
-  display: flex;
-  row-gap: 48px;
-  flex-wrap: wrap;
-  flex-basis: calc((100% - 24px * 2) / 3);
-  justify-content: space-between;
-}
-
-.portfolio-item {
-  border: 1px solid var(--accent-color);
-}
-
-.portfolio-content {
-  display: flex;
-  padding: 0px 16px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 8px;
-  align-self: stretch;
-  padding-top: 32px;
-  padding-bottom: 32px;
+.team-text {
+  text-align: center;
 }
 
 /**
@@ -361,6 +340,13 @@ img {
   | Filter
   |============================
 */
+.filter-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
 .filter-btn {
   background-color: var(--light-color);
   font-size: 16px;
@@ -368,10 +354,11 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   padding: 12px 24px;
-  border-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
   font-family: var(--main-font);
   color: var(--primary-brand-color);
   text-align: center;
+  border-radius: 4px;
 }
 
 .filter-btn:hover,
@@ -381,12 +368,43 @@ img {
   border: 1px solid transparent;
 }
 
-.filter-list {
-  display: flex;
-  gap: 24px;
+/**
+  |============================
+  | Portfolio card
+  |============================
+*/
+.portfolio {
   padding-top: 96px;
-  padding-bottom: 72px;
+  padding-bottom: 120px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-item {
+  flex-basis: calc((100% - 24px * 2) / 3);
+}
+
+.portfolio-content {
+  display: flex;
+  padding: 32px 16px;
+  flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border: 1px solid var(--accent-color);
+  border-top: none;
+}
+
+.portfolio-subtitle {
+  margin-bottom: 8px;
 }
 
 /**
@@ -397,13 +415,14 @@ img {
 .footer {
   background-color: var(--hero-footer-background-color);
   color: var(--light-color);
+  padding: 100px 0;
 }
 
 .footer-logo {
-  display: flex;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  margin-left: 156px;
-  flex-direction: column;
-  width: 264px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer-text {
+  max-width: 264px;
 }
