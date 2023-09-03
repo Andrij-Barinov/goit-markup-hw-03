@@ -269,7 +269,7 @@ img {
 }
 
 .development-title {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .developments-list {
@@ -296,7 +296,7 @@ img {
 }
 
 .team-title {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .team-list {
@@ -358,7 +358,6 @@ img {
   font-family: var(--main-font);
   color: var(--primary-brand-color);
   text-align: center;
-  border-radius: 4px;
 }
 
 .filter-btn:hover,
