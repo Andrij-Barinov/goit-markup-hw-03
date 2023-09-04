@@ -1,1 +1,1 @@
-# goit-markup-hw-01
+# Module 3: Block model. Flexbox.
